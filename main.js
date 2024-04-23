@@ -157,3 +157,8 @@ function swapBG(n){
         document.body.style.backgroundImage = "url('memorizeit_2/image/background.gif')"
     }
 }
+
+function toggleCategories() {
+    var categoryList = document.querySelector(".category-list");
+    categoryList.classList.toggle("hidden");
+}

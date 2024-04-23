@@ -282,3 +282,40 @@ input[type="username"],
   .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+  .categories {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.category-list {
+  background-color: rgba(0, 0, 0, 0.486); /* สีพื้นหลังเป็นสีเทาอ่อนๆ */
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 2px solid white; /* เส้นขอบเป็นสีขาว */
+  color: white; /* กำหนดสีข้อความเป็นสีขาว */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กับข้อความ */
+  font-size: 16px; /* ปรับขนาดฟ้อนต์ */
+}
+
+.category {
+    color: white;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
