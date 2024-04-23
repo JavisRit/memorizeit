@@ -111,7 +111,7 @@ window.onload = function() {
     joinModeSound.volume = 0.25; // ลดเสียงลงเป็น 50%
     joinModeSound.play();
 
-    if (selectedGamemode.trim() === ">> SELECT MODE <<") {
+    if (selectedGamemode.trim() === "> SELECT MODE <") {
         Swal.fire({
             icon: "error",
             title: "ERROR!",
