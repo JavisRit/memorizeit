@@ -130,7 +130,7 @@ function nextStep() {
 
 function sequenceDisplay(color){
 
-  let fontSound = new Audio('/memorizeit_1/sound/font.MP3')
+  let fontSound = new Audio('/memorizeit_1/sound/font.mp3')
   fontSound.volume = 0.50; // ลดเสียงลง 50%
   fontSound.play();
 
@@ -144,7 +144,7 @@ function sequenceDisplay(color){
 
 function sequenceDisplay2(color){
 
-  let fontSound = new Audio('/memorizeit_1/sound/font.MP3')
+  let fontSound = new Audio('/memorizeit_1/sound/font.mp3')
   fontSound.volume = 0.50; // ลดเสียงลง 50%
   fontSound.play();
   
@@ -176,7 +176,7 @@ function nextRound() {
     console.log(number)
     console.log(color)
     let nextLevels = new Audio('/memorizeit_1/sound/nextlevel.mp3')
-    nextLevels.volume = 0.5; // ลดเสียงลง 50%
+    nextLevels.volume = 0.50; // ลดเสียงลง 50%
     nextLevels.play();
 
     const tile = document.querySelector(`[data-tile='${color}']`);
