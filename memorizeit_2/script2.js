@@ -130,7 +130,7 @@ function nextStep() {
 
 function sequenceDisplay(color){
 
-  let fontSound = new Audio('/memorizeit_1/sound/font.mp3')
+  let fontSound = new Audio('/memorizeit_1/sound/sound_font.mp3')
   fontSound.volume = 0.50; // ลดเสียงลง 50%
   fontSound.play();
 
@@ -144,7 +144,7 @@ function sequenceDisplay(color){
 
 function sequenceDisplay2(color){
 
-  let fontSound = new Audio('/memorizeit_1/sound/font.mp3')
+  let fontSound = new Audio('/memorizeit_1/sound/sound_font.mp3')
   fontSound.volume = 0.50; // ลดเสียงลง 50%
   fontSound.play();
   
