@@ -175,8 +175,8 @@ function nextRound() {
     color = hiddenButton[number] 
     console.log(number)
     console.log(color)
-    let nextLevels = new Audio('/memorizeit_2/sound/nextlevel.mp3')
-    nextLevels.volume = 0.50; // ลดเสียงลง 50%
+    let nextLevels = new Audio('/memorizeit_1/sound/nextlevel.mp3')
+    nextLevels.volume = 0.5; // ลดเสียงลง 50%
     nextLevels.play();
 
     const tile = document.querySelector(`[data-tile='${color}']`);
