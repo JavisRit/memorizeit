@@ -301,7 +301,7 @@ function leave() {
                 showConfirmButton: false
               });
               setTimeout(() => {
-                window.location.href = "/main.html"; // เปลี่ยน URL หน้าเว็บ
+                window.location.href = "/index.html"; // เปลี่ยน URL หน้าเว็บ
             }, 1500); // รอ 1.5 วินาทีก่อนที่จะเปลี่ยนหน้า
             }
           });

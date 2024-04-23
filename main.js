@@ -122,7 +122,7 @@ window.onload = function() {
         return; // ไม่ทำการตรวจสอบ Username หรือเปลี่ยนหน้า
     }
 
-    var redirectURL = "/memorizeit_1/index.html"; // URL ที่จะเปลี่ยนไปตาม Gamemode
+    var redirectURL = "/memorizeit_1/index1.html"; // URL ที่จะเปลี่ยนไปตาม Gamemode
     if (selectedGamemode.trim() === "OBSERVATION") {
         redirectURL = "/memorizeit_2/index2.html"; // เปลี่ยน URL ถ้าเลือกโหมด OBSERV
     }
