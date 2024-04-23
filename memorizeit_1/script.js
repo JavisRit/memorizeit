@@ -111,7 +111,7 @@ function endGame(text,title){
   humanSequence = [];
   level = 0;
   startButton.classList.remove('hidden');
-  heading.textContent = 'OBSERVATION';
+  heading.textContent = 'MEMORIZE';
   info.classList.add('hidden');
   tileContainer.classList.add('unclickable');
 
