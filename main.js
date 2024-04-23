@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var gameModeButton = document.getElementById("gameModeButton");
+    let gameModeButton = document.getElementById("gameModeButton");
 
     gameModeButton.addEventListener("click", function () {
         // ซ่อนปุ่ม GameMode
         gameModeButton.style.display = "none";
 
-        var gamemodesSection = document.querySelector(".gamemodes");
+        let gamemodesSection = document.querySelector(".gamemodes");
 
         // สร้างปุ่ม Easy
-        var easyButton = createModeButton("MEMORIZE");
+        let easyButton = createModeButton("MEMORIZE");
         gamemodesSection.appendChild(easyButton);
 
         // สร้างปุ่ม Medium
-        var mediumButton = createModeButton("OBSERVATION");
+        let mediumButton = createModeButton("OBSERVATION");
         gamemodesSection.appendChild(mediumButton);
 
         // กำหนด event listener ให้กับแต่ละปุ่ม
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function createModeButton(text) {
-    var button = document.createElement("button");
+    let button = document.createElement("button");
     button.textContent = text;
     button.classList.add("gamemode-button", "mode-button");
 
     // เพิ่มเสียงเข้าไปในปุ่ม
-    var clickSound = new Audio("/memorizeit_1/sound/selectsound.mp3");
+    let clickSound = new Audio("/memorizeit_1/sound/selectsound.mp3");
     clickSound.volume = 0.25; // ลดเสียงลงเป็น 25%
     button.appendChild(clickSound);
 
@@ -51,19 +51,19 @@ function createModeButton(text) {
 }
 
 function changeGameMode(mode) {
-    var gameModeButton = document.getElementById("gameModeButton");
+    let gameModeButton = document.getElementById("gameModeButton");
     gameModeButton.textContent = mode;
 }
 
 function hideModeButtons() {
-    var buttons = document.querySelectorAll('.mode-button');
+    let buttons = document.querySelectorAll('.mode-button');
     buttons.forEach(function(button) {
         button.style.display = "none"; // ซ่อนปุ่ม
     });
 }
 
 function centerGameModeButton() {
-    var gameModeButton = document.getElementById("gameModeButton");
+    let gameModeButton = document.getElementById("gameModeButton");
     gameModeButton.style.display = "block";
     gameModeButton.style.margin = "auto"; // กำหนดให้ปุ่มอยู่ตรงกลาง
 }
@@ -93,7 +93,7 @@ window.onload = function() {
     }
 
     // เสียงเมื่อกดปุ่ม togglePlay()
-    var togglePlaySound = new Audio("/memorizeit_1/sound/selectsound.mp3");
+    let togglePlaySound = new Audio("/memorizeit_1/sound/selectsound.mp3");
     togglePlaySound.volume = 0.25; // ลดเสียงลงเป็น 25%
     togglePlaySound.play();
 }
@@ -103,11 +103,11 @@ window.onload = function() {
   // }
 
   function checkUsername() {
-    var usernameInput = document.getElementById("username").value;
-    var selectedGamemode = document.getElementById("gameModeButton").textContent;
+    let usernameInput = document.getElementById("username").value;
+    let selectedGamemode = document.getElementById("gameModeButton").textContent;
 
     // เสียงเมื่อกด Join Mode
-    var joinModeSound = new Audio("/memorizeit_1/sound/selectsound.mp3");
+    let joinModeSound = new Audio("/memorizeit_1/sound/selectsound.mp3");
     joinModeSound.volume = 0.25; // ลดเสียงลงเป็น 50%
     joinModeSound.play();
 
@@ -122,7 +122,7 @@ window.onload = function() {
         return; // ไม่ทำการตรวจสอบ Username หรือเปลี่ยนหน้า
     }
 
-    var redirectURL = "/memorizeit_1/index1.html"; // URL ที่จะเปลี่ยนไปตาม Gamemode
+    let redirectURL = "/memorizeit_1/index1.html"; // URL ที่จะเปลี่ยนไปตาม Gamemode
     if (selectedGamemode.trim() === "OBSERVATION") {
         redirectURL = "/memorizeit_2/index2.html"; // เปลี่ยน URL ถ้าเลือกโหมด OBSERV
     }
@@ -159,6 +159,6 @@ function swapBG(n){
 }
 
 function toggleCategories() {
-    var categoryList = document.querySelector(".category-list");
+    let categoryList = document.querySelector(".category-list");
     categoryList.classList.toggle("hidden");
 }
